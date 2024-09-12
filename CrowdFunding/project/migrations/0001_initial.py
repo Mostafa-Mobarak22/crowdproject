@@ -12,11 +12,16 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Category',
+            name='Project',
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('title', models.CharField(max_length=50)),
+                ('title', models.CharField(max_length=100)),
                 ('details', models.TextField()),
+                ('image', models.ImageField(null=True, upload_to='user/images')),
+                ('target', models.IntegerField()),
+                ('start_date', models.DateField()),
+                ('end_date', models.DateField()),
+                ('tags', models.TextField()),
             ],
         ),
     ]

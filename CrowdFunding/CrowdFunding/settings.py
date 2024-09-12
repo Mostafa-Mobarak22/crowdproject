@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'project.apps.ProjectConfig',
     'category.apps.CategoryConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
